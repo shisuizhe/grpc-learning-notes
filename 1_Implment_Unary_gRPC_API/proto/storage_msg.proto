@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package pcbook.pbfiles;      // 生成的pb文件的包名称
+option go_package=".;pb"; // 生成的pb文件的包名称（如果是go类型的，则包名称以这里为准）
+
+import "memory_msg.proto";
+
+message Storage {
+  enum Driver {
+    UNKNOWN = 0;
+    HDD = 1;
+    SSD = 2;
+  }
+  Driver driver = 1; // 驱动类型
+  Memory memory = 2; // 内存大小
+}

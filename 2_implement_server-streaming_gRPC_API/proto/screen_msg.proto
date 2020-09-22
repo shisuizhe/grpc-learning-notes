@@ -1,0 +1,21 @@
+syntax="proto3";
+
+package pcbook.pbfiles;      // 生成的pb文件的包名称
+option go_package=".;pb"; // 生成的pb文件的包名称（如果是go类型的，则包名称以这里为准）
+
+message Screen {
+  // 因为分辨率是显示屏独有的，将它定义在外面没有任何意义
+  message Resolution {
+    uint32 width = 1;
+    uint32 height = 2;
+  }
+  enum Panel {
+    UNKNOWN = 0;
+    IPS = 1;
+    OLED = 2;
+  }
+  float size_inch = 1; // 屏幕尺寸
+  Resolution resolution = 2; // 屏幕分辨率
+  Panel panel = 3; // 屏幕类型
+  bool multitouch = 4; // 是否支持多点触控
+}

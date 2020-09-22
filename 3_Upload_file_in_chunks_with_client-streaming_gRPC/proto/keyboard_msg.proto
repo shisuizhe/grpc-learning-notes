@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package pcbook.pbfiles;      // 生成的pb文件的包名称
+option go_package=".;pb"; // 生成的pb文件的包名称（如果是go类型的，则包名称以这里为准）
+
+message Keyboard {
+  enum Layout {
+    UNKNOWN = 0;
+    QWERTY = 1;
+    QWERTZ = 2;
+    AZERTY = 3;
+  }
+  Layout layout = 1; // 键盘布局
+  bool backlit = 2;  // 是否是发光键盘
+}

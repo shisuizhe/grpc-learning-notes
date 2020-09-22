@@ -1,0 +1,23 @@
+syntax="proto3";
+
+package pcbook.pbfiles;      // 生成的pb文件的包名称
+option go_package=".;pb"; // 生成的pb文件的包名称（如果是go类型的，则包名称以这里为准）
+
+import "memory_msg.proto";
+
+message CPU {
+  string brand = 1;
+  string name = 2;
+  uint32 number_cores = 3;
+  uint32 number_threads = 4;
+  double min_ghz = 5;
+  double max_ghz = 6;
+}
+
+message GPU {
+  string brand = 1;
+  string name = 2;
+  double min_ghz = 3;
+  double max_ghz = 4;
+  Memory memory = 5;
+}

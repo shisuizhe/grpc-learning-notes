@@ -1,0 +1,62 @@
+{
+  "id": "51d4482c-d283-4c9a-8db9-f406ef3c52a6",
+  "brand": "Lenovo",
+  "name": "Thinkpad P53",
+  "cpu": {
+    "brand": "AMD",
+    "name": "Ryzen 7 PRO 2700U",
+    "number_cores": 4,
+    "number_threads": 8,
+    "min_ghz": 2.190037329423571,
+    "max_ghz": 3.9029009780109103
+  },
+  "ram": {
+    "value": "44",
+    "unit": "GIGABYTE"
+  },
+  "gpus": [
+    {
+      "brand": "Intel",
+      "name": "GTX 1660-Ti",
+      "min_ghz": 1.2600676145214764,
+      "max_ghz": 1.2917284611505988,
+      "memory": {
+        "value": "3",
+        "unit": "GIGABYTE"
+      }
+    }
+  ],
+  "storages": [
+    {
+      "driver": "HDD",
+      "memory": {
+        "value": "5",
+        "unit": "TERABYTE"
+      }
+    },
+    {
+      "driver": "SSD",
+      "memory": {
+        "value": "382",
+        "unit": "GIGABYTE"
+      }
+    }
+  ],
+  "screen": {
+    "size_inch": 13.500554,
+    "resolution": {
+      "width": 2533,
+      "height": 1425
+    },
+    "panel": "IPS",
+    "multitouch": true
+  },
+  "keyboard": {
+    "layout": "QWERTY",
+    "backlit": true
+  },
+  "weight_kg": 2.7657031869961894,
+  "price_usd": 2379.3615247848975,
+  "release_year": 2020,
+  "updated_at": "2020-09-21T09:45:59.059253100Z"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "0faf50ff-da45-421a-bda9-1fd2391e5d9d",
+  "brand": "Lenovo",
+  "name": "Thinkpad P1",
+  "cpu": {
+    "brand": "Intel",
+    "name": "Core i7-9750H",
+    "number_cores": 2,
+    "number_threads": 4,
+    "min_ghz": 2.395692157425716,
+    "max_ghz": 4.4362410474958365
+  },
+  "ram": {
+    "value": "41",
+    "unit": "GIGABYTE"
+  },
+  "gpus": [
+    {
+      "brand": "Intel",
+      "name": "RTX 2070",
+      "min_ghz": 1.106969185679009,
+      "max_ghz": 1.429318754975626,
+      "memory": {
+        "value": "3",
+        "unit": "GIGABYTE"
+      }
+    }
+  ],
+  "storages": [
+    {
+      "driver": "HDD",
+      "memory": {
+        "value": "1",
+        "unit": "TERABYTE"
+      }
+    },
+    {
+      "driver": "SSD",
+      "memory": {
+        "value": "787",
+        "unit": "GIGABYTE"
+      }
+    }
+  ],
+  "screen": {
+    "size_inch": 14.811067,
+    "resolution": {
+      "width": 5546,
+      "height": 3120
+    },
+    "panel": "IPS",
+    "multitouch": false
+  },
+  "keyboard": {
+    "layout": "QWERTZ",
+    "backlit": true
+  },
+  "weight_kg": 1.5545006793828207,
+  "price_usd": 2825.71338430812,
+  "release_year": 2017,
+  "updated_at": "2020-09-21T05:00:47.943511Z"
+}

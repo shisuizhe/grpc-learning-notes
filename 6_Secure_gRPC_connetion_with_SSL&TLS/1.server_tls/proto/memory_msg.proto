@@ -1,0 +1,18 @@
+syntax="proto3";
+
+package pcbook.pbfiles;      // 生成的pb文件的包名称
+option go_package=".;pb"; // 生成的pb文件的包名称（如果是go类型的，则包名称以这里为准）
+
+message Memory {
+  enum Unit {
+    UNKNOWN = 0;
+    BIT = 1;
+    BYTE = 2;
+    KILOBYTE = 3; // 千字节
+    MEGABATE = 4; // 百万字节
+    GIGABYTE = 5; // 十亿字节
+    TERABYTE = 6; // 万亿字节
+  }
+  uint64 value = 1;
+  Unit unit = 2;
+}

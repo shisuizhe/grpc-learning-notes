@@ -1,0 +1,30 @@
+syntax="proto3";
+
+package pcbook.pbfiles;      // 生成的pb文件的包名称
+option go_package=".;pb"; // 生成的pb文件的包名称（如果是go类型的，则包名称以这里为准）
+
+import "processor_msg.proto";
+import "memory_msg.proto";
+import "storage_msg.proto";
+import "screen_msg.proto";
+import "keyboard_msg.proto";
+import "google/protobuf/timestamp.proto";
+
+message Laptop {
+  string id = 1;
+  string brand = 2;
+  string name = 3;
+  CPU cpu = 4;
+  Memory ram = 5;
+  repeated GPU gpus = 6; // 可以有多个显卡
+  repeated Storage storages = 7; // 可以有多块存储盘
+  Screen screen = 8;
+  Keyboard keyboard = 9;
+  oneof weight { // 重量（千克或者磅表示）
+    double weight_kg = 10;
+    double weight_lb = 11;
+  }
+  double price_usd = 12; // 价格
+  uint32 release_year = 13; // 上市年份
+  google.protobuf.Timestamp updated_at = 14;
+}
